@@ -1,0 +1,45 @@
+###
+#root endpoint
+http://localhost:3000/
+
+###
+#endpoint to get all user
+http://localhost:3000/users/
+
+
+###
+#endpoint to get a user with id
+http://localhost:3000/users/5
+
+
+###
+#endpoint to post a user
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"qvsdasaa",
+    "username":"qusaama226",
+    "email":"qayeshaa12@gmail.com",
+    "bio":"akjbksadcklasnc"
+}
+
+###
+#endpoint to update a user
+PUT  http://localhost:3000/users/8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"updated",
+    "username":"ayeshaqwe",
+    "email":"ayesha12@gmail.com",
+    "bio":"akjbksadcklasnc"
+}
+
+
+
+###
+#endpoint to delete a user
+
+DELETE   http://localhost:3000/users/7 HTTP/1.1
+Content-Type: application/json
